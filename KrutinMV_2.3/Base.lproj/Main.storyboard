@@ -34,7 +34,7 @@
                                                     <constraint firstAttribute="width" secondItem="qRL-vP-6ft" secondAttribute="height" multiplier="150:17" id="78Q-dq-pct"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeU-wJ-87o">
                                                 <rect key="frame" x="0.0" y="42" width="300" height="34"/>
@@ -42,7 +42,7 @@
                                                     <constraint firstAttribute="width" secondItem="NeU-wJ-87o" secondAttribute="height" multiplier="150:17" id="1j4-AQ-Wzf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
