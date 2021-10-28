@@ -40,8 +40,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard let goToWelcomeViewController = segue.source as? WelcomeViewController else { return }
-        userNameField.text = goToWelcomeViewController.userName
+        guard segue.source is WelcomeViewController else { return }
+        userNameField.text = ""
+        passwordField.text = ""
     }
     
     @IBAction func logInButtonPressed(_ sender: Any) {
