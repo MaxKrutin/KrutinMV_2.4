@@ -128,13 +128,13 @@
         <!--Welcome View Controller-->
         <scene sceneID="IcY-TL-YY4">
             <objects>
-                <viewController id="xXR-GB-xnS" customClass="WelcomeViewController" customModule="KrutinMV_2_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="xXR-GB-xnS" customClass="WelcomeViewController" customModule="KrutinMV_2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LTz-BK-ZQl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj3-I5-IoX">
-                                <rect key="frame" x="75" y="614" width="264" height="44"/>
+                                <rect key="frame" x="66.5" y="665" width="281" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Kj3-I5-IoX" secondAttribute="height" multiplier="6:1" id="6QH-s9-9i8"/>
                                 </constraints>
@@ -148,7 +148,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UqB-Qe-atQ" userLabel="Welcome Label">
-                                <rect key="frame" x="63" y="150" width="288" height="48"/>
+                                <rect key="frame" x="54" y="194" width="306" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UqB-Qe-atQ" secondAttribute="height" multiplier="6:1" id="8Sk-I5-GPG"/>
                                 </constraints>
