@@ -32,10 +32,6 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func logInButtonPressed(_ sender: Any) {
-//        if userNameField.text == login && passwordField.text = password
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let goToWelcomeViewController = segue.destination as? WelcomeViewController else { return }
         goToWelcomeViewController.userName = userNameField.text ?? ""
@@ -44,7 +40,15 @@ class ViewController: UIViewController {
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         guard let goToWelcomeViewController = segue.source as? WelcomeViewController else { return }
-      
+        userNameField.text = goToWelcomeViewController.userName
+    }
+    
+    @IBAction func logInButtonPressed(_ sender: Any) {
+        if userNameField.text == login && passwordField.text == password {
+            performSegue(withIdentifier: "goToWelcomeViewController", sender: nil)
+        } else {
+            showAlert(title: "Invalid login or password", message: "Please, enter correct login and password")
+        }
     }
     
 }
@@ -57,3 +61,4 @@ extension ViewController {
         present(alert, animated: true)
     }
 }
+

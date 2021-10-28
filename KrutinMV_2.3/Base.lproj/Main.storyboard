@@ -144,7 +144,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logOutButtonPressed" destination="xXR-GB-xnS" eventType="touchUpInside" id="EOg-Ew-lPs"/>
-                                    <segue destination="uVX-cz-dBA" kind="unwind" unwindAction="unwindFor:" id="Sb3-Nu-Rz5"/>
+                                    <segue destination="uVX-cz-dBA" kind="unwind" unwindAction="unwindFor:" id="XUK-ey-V2x"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UqB-Qe-atQ" userLabel="Welcome Label">
