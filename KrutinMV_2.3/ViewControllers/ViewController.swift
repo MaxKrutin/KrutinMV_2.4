@@ -56,8 +56,8 @@ class ViewController: UIViewController {
         guard let viewControllers = tabBarController.viewControllers else { return }
         
         for viewController in viewControllers {
-            if let goTowelcomeViewController = viewController as? WelcomeViewController {
-                goTowelcomeViewController.user = user
+            if let WelcomeViewController = viewController as? WelcomeViewController {
+                WelcomeViewController.user = user
             } else if let navigationViewController = viewController as? UINavigationController {
                 let aboutUserViewController = navigationViewController.topViewController as! AboutUserViewController
                 aboutUserViewController.user = user
@@ -95,7 +95,7 @@ extension ViewController: UITextFieldDelegate {
             passwordField.becomeFirstResponder()
         } else {
             logInButtonPressed()
-            performSegue(withIdentifier: "goToWelcomeViewController", sender: nil)
+            performSegue(withIdentifier: "WelcomeViewController", sender: nil)
         }
         return true
     }

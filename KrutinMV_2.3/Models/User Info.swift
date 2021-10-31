@@ -12,27 +12,29 @@ struct User {
     let password: String
     let person: Person
     
+    struct Person {
+        let firstName: String
+        let lastName: String
+        let userGreetings: String
+        let aboutUser: String
+        let userHobby: String
+        let userMood: String
+        
+        var fullName: String {
+            "\(firstName) \(lastName)"
+        }
+    }
+    
     static func getUserInfo() -> User {
         User(login: "User",
              password: "Password",
              person: Person(firstName: "Max",
                             lastName: "Krutin",
-                            greetings: "Hi there 🎃",
-                            aboutPerson: "My name is Max and I'm from Ukraine. I'm 31 y.o.",
-                            hobby: "I'm fond of bodybuilding. So when I need to relax I'm heading to the gym. Training is the best way to get some positive vibes for me 💪🏼"
+                            userGreetings: "Hi there 🎃",
+                            aboutUser: "My name is Max and I'm from Ukraine. I'm 31 y.o.",
+                            userHobby: "I'm fond of bodybuilding. So when I need to relax I'm heading to the gym. Training is the best way to get some positive vibes for me 💪🏼",
+                            userMood: "🥱"
                            ))
     }
     
-}
-
-struct Person {
-    let firstName: String
-    let lastName: String
-    let greetings: String
-    let aboutPerson: String
-    let hobby: String
-    
-    var fullName: String {
-        "\(firstName) \(lastName)"
-    }
 }

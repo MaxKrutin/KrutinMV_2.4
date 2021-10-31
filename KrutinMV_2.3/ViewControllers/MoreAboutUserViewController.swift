@@ -9,10 +9,14 @@ import UIKit
 
 class MoreAboutUserViewController: UIViewController {
     
+    @IBOutlet var userHobby: UILabel!
+    
     var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userHobby.text = user.person.userHobby
 
     }
     
