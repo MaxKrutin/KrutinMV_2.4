@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9471FBE4272EEF2E00EF4B35 /* User Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471FBE3272EEF2E00EF4B35 /* User Info.swift */; };
+		9471FBE6272F28B500EF4B35 /* AboutUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471FBE5272F28B500EF4B35 /* AboutUserViewController.swift */; };
+		9471FBE8272F28F900EF4B35 /* MoreAboutUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471FBE7272F28F900EF4B35 /* MoreAboutUserViewController.swift */; };
+		9471FBEA272F291C00EF4B35 /* LastPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471FBE9272F291C00EF4B35 /* LastPageViewController.swift */; };
 		948784CD272835970060B7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948784CC272835970060B7A4 /* AppDelegate.swift */; };
 		948784CF272835970060B7A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948784CE272835970060B7A4 /* SceneDelegate.swift */; };
 		948784D1272835970060B7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948784D0272835970060B7A4 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9471FBE3272EEF2E00EF4B35 /* User Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Info.swift"; sourceTree = "<group>"; };
+		9471FBE5272F28B500EF4B35 /* AboutUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutUserViewController.swift; path = KrutinMV_2.3/ViewControllers/AboutUserViewController.swift; sourceTree = SOURCE_ROOT; };
+		9471FBE7272F28F900EF4B35 /* MoreAboutUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreAboutUserViewController.swift; sourceTree = "<group>"; };
+		9471FBE9272F291C00EF4B35 /* LastPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPageViewController.swift; sourceTree = "<group>"; };
 		948784C9272835970060B7A4 /* KrutinMV_2.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrutinMV_2.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948784CC272835970060B7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		948784CE272835970060B7A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9471FBDC272EE90C00EF4B35 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				948784D0272835970060B7A4 /* ViewController.swift */,
+				948784E02729B87C0060B7A4 /* WelcomeViewController.swift */,
+				9471FBE5272F28B500EF4B35 /* AboutUserViewController.swift */,
+				9471FBE7272F28F900EF4B35 /* MoreAboutUserViewController.swift */,
+				9471FBE9272F291C00EF4B35 /* LastPageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9471FBDD272EE94900EF4B35 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				948784D2272835970060B7A4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9471FBDE272EE97600EF4B35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				948784D5272835990060B7A4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9471FBDF272EE9AD00EF4B35 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				948784CC272835970060B7A4 /* AppDelegate.swift */,
+				948784CE272835970060B7A4 /* SceneDelegate.swift */,
+				948784DA272835990060B7A4 /* Info.plist */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		9471FBE0272EEBA800EF4B35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9471FBE3272EEF2E00EF4B35 /* User Info.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		948784C0272835970060B7A4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +112,12 @@
 		948784CB272835970060B7A4 /* KrutinMV_2.3 */ = {
 			isa = PBXGroup;
 			children = (
-				948784CC272835970060B7A4 /* AppDelegate.swift */,
-				948784CE272835970060B7A4 /* SceneDelegate.swift */,
-				948784D0272835970060B7A4 /* ViewController.swift */,
-				948784E02729B87C0060B7A4 /* WelcomeViewController.swift */,
-				948784D2272835970060B7A4 /* Main.storyboard */,
-				948784D5272835990060B7A4 /* Assets.xcassets */,
+				9471FBE0272EEBA800EF4B35 /* Models */,
+				9471FBDC272EE90C00EF4B35 /* ViewControllers */,
+				9471FBDD272EE94900EF4B35 /* Storyboards */,
+				9471FBDE272EE97600EF4B35 /* Resources */,
+				9471FBDF272EE9AD00EF4B35 /* Configs */,
 				948784D7272835990060B7A4 /* LaunchScreen.storyboard */,
-				948784DA272835990060B7A4 /* Info.plist */,
 			);
 			path = KrutinMV_2.3;
 			sourceTree = "<group>";
@@ -142,9 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				948784D1272835970060B7A4 /* ViewController.swift in Sources */,
+				9471FBE8272F28F900EF4B35 /* MoreAboutUserViewController.swift in Sources */,
 				948784E12729B87C0060B7A4 /* WelcomeViewController.swift in Sources */,
 				948784CD272835970060B7A4 /* AppDelegate.swift in Sources */,
 				948784CF272835970060B7A4 /* SceneDelegate.swift in Sources */,
+				9471FBE4272EEF2E00EF4B35 /* User Info.swift in Sources */,
+				9471FBE6272F28B500EF4B35 /* AboutUserViewController.swift in Sources */,
+				9471FBEA272F291C00EF4B35 /* LastPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +351,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TQ7Q24JUU6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KrutinMV_2.3/Info.plist;
+				INFOPLIST_FILE = KrutinMV_2.3/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,11 +380,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TQ7Q24JUU6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KrutinMV_2.3/Info.plist;
+				INFOPLIST_FILE = KrutinMV_2.3/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
